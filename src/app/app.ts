@@ -3,13 +3,9 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { About } from './components/about/about';
-import { Clients } from './components/clients/clients';
 import { Pricing } from './components/pricing/pricing';
 import { Testimonials } from './components/testimonials/testimonials';
-import { Gallery } from './components/gallery/gallery';
 import { Nav } from './components/nav/nav';
-import { Services } from './components/services/services';
-import { Footer } from './components/footer/footer';
 import { Faq } from "./components/faq/faq";
 import { Contact } from './components/contact/contact';
 
@@ -18,7 +14,7 @@ import { Contact } from './components/contact/contact';
   standalone: true,
   imports: [CommonModule, Header,
     About, Pricing, Testimonials,
-    Nav, Footer, Faq, Contact],
+    Nav, Faq, Contact],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
