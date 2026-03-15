@@ -781,9 +781,22 @@ h6 {
 }
 
 .section-subtitle {
-    font-size: 25px;
+    font-size: 28px;
     padding-top: 0;
-    font-family: 'Caveat', cursive !important;
+    font-family: 'Amatic SC', cursive;
+    margin-top: -23%;
+    margin-left: 29%;
+    max-width:800px;
+    margin:20px auto;
+    line-height:1.7;
+    color: #111;
+    font-weight: 600;
+}
+
+.section-subtitle-about {
+    font-size: 21px;
+    padding-top: 0;
+    font-family: 'Nunito', sans-serif;
     margin-top: -23%;
     margin-left: 29%;
     max-width:800px;
@@ -2427,7 +2440,7 @@ blockquote {
  }
 
  .faq-title {
-    margin: 21px 0 10px 0;
+    margin: -65px 0px 55px;
     font-size: 35px;
     letter-spacing: 0.2px;
     font-family: 'Amatic SC';
@@ -2438,8 +2451,9 @@ blockquote {
  .faq-subtitle {
      margin: 0 auto;
      max-width: 520px;
-     opacity: 0.8;font-family: 'Nunito';
-     font-size: large;
+     opacity: 0.8;font-family: 'Amatic SC';
+     font-size: 28px;
+     font-weight: 600;
  }
 
  .faq-accordion {
