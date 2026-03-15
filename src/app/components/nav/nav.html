@@ -1,4 +1,4 @@
- <div id="header" class="nav-collapse">
+ <div id="header" class="nav-collapse nav-solid">
             <div class="row clearfix">
                 <div class="col-1">
 
@@ -16,59 +16,29 @@
                     </div>
                     <!--End of Logo-->
 
-                    <!-- <aside> -->
-
-                        <!--Social Icons in Header-->
-                       <!--  <ul class="social-icons">
-                            <li>
-                            <a target="_blank" title="WhatsApp" href="https://wa.me/971XXXXXXXXX">
-                                <i class="fa fa-whatsapp fa-2x" style="color: white"></i>
-                             
-                            </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Email" href="mailto:frenchclasses@email.com">
-                                    <i class="fa fa-envelope fa-2x" style="color: white"></i><span>Email</span>
-                                </a>
-                            </li>
-
-                        </ul> -->
-                        <!--End of Social Icons in Header-->
-
-                    <!-- </aside> -->
-
 
                     <!--Main Navigation-->
                     <nav id="nav-main">
                         <ul>
-                            <li>
-                                <a href="#banner">Home</a>
+                            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                                <a routerLink="/">Home</a>
                             </li>
-                            <li>
-                                <a href="#about">About</a>
+                            <li routerLinkActive="active">
+                                <a routerLink="/about">About</a>
                             </li>
-                            <!-- <li>
-                                <a href="#gallery">Gallery</a>
-                            </li> -->
-                            <!-- <li>
-                                <a href="#clients">Clients</a>
-                            </li> -->
-                               <li>
-                                <a href="#pricing">Classes</a>
+                               <li routerLinkActive="active">
+                                <a routerLink="/pricing">Classes</a>
                             </li>
-                              <li>
-                                <a href="#testimonials">Testimonials</a>
+                              <li routerLinkActive="active">
+                                <a routerLink="/testimonials">Testimonials</a>
                             </li>
                          
-                            <li>
-                                <a href="#questions">FAQs</a>
+                            <li routerLinkActive="active">
+                                <a routerLink="/questions">FAQs</a>
                             </li>
-                            <li>
-                                <a href="#contact">Contact</a>
+                            <li routerLinkActive="active">
+                                <a routerLink="/contact">Contact</a>
                             </li>
-                            <!--  <li>
-                                <a href="#services">Services</a>
-                            </li> -->
                         </ul>
                     </nav>
                     <!--End of Main Navigation-->

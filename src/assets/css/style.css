@@ -306,7 +306,7 @@ section {
     overflow: visible;
     z-index: 9999;
     width: 100%;
-    position: absolute !important;
+    position: sticky;
 }
 
 #header .row {
@@ -500,7 +500,7 @@ section {
 }
 
 #header nav ul {
-    text-transform: uppercase;
+    text-transform: none;
     margin-right: 150px;
 
 }
@@ -530,7 +530,7 @@ section {
 }
 
 #header.nav-solid nav a {
-    border-bottom: 0px solid;
+    border-bottom: none;
     border-color: #fff;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -573,7 +573,7 @@ section {
     height: 71px;
     color: #111;
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 22px;
     text-align: center;
     border-top-right-radius: 5px;
@@ -783,8 +783,7 @@ h6 {
 .section-subtitle {
     font-size: 25px;
     padding-top: 0;
-    font-family: Amatic SC;
-    font-weight: bold;
+    font-family: 'Caveat', cursive !important;
     margin-top: -23%;
     margin-left: 29%;
     max-width:800px;
@@ -824,6 +823,16 @@ h6 {
     width: 30px;
     height: 5px;
     margin-top: 30px;
+}
+
+#banner-content {
+    position: relative;
+    z-index: 10;
+}
+
+#banner-content .button {
+    position: relative;
+    z-index: 11;
 }
 
 
@@ -1452,7 +1461,7 @@ blockquote {
     display: block;
     text-align: center;
     position: relative;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: bold;
     color: #fff;
 }
@@ -1519,7 +1528,7 @@ blockquote {
 
 .pricing-block h3 {
     font-size:17px;
-    text-transform:uppercase;
+    text-transform:none;
     padding-bottom:0;
 }
 
@@ -2418,15 +2427,19 @@ blockquote {
  }
 
  .faq-title {
-     margin: 0 0 10px 0;
-     font-size: 2rem;
-     letter-spacing: 0.2px;
+    margin: 21px 0 10px 0;
+    font-size: 35px;
+    letter-spacing: 0.2px;
+    font-family: 'Amatic SC';
+    font-weight: 600;
+
  }
 
  .faq-subtitle {
      margin: 0 auto;
      max-width: 520px;
-     opacity: 0.8;
+     opacity: 0.8;font-family: 'Nunito';
+     font-size: large;
  }
 
  .faq-accordion {
@@ -2465,6 +2478,7 @@ blockquote {
      font-weight: 600;
      text-align: left;
      color: #cca2a3;
+     font-family: 'Nunito', sans-serif !important;
  }
 
  .faq-question:focus {
@@ -2514,8 +2528,9 @@ blockquote {
      padding: 0 18px 18px 18px;
      opacity: 0.9;
      line-height: 1.6;
-     font-size: 0.98rem;
+     font-size: 1rem;
      color: #011f52;
+     font-family: 'Nunito', sans-serif !important;;
  }
 
  /* Active state */
@@ -2750,8 +2765,10 @@ blockquote {
 
 #programs .icon-block-description h4 {
     margin-bottom: 12px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
 }
 
 #programs .icon-block-description p {
@@ -2798,6 +2815,25 @@ blockquote {
 
 .whatsapp-btn:hover{
     background:#20ba5a;
+}
+
+#banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#banner-content .section-heading {
+    max-width: 520px;
+}
+
+#banner img {
+    border-radius: 20px;
+}
+
+#banner {
+    padding: 80px 0;
 }
 
 

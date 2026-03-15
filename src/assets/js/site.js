@@ -32,9 +32,9 @@ $(document).ready(function () {
 	});
 
 	/* Sticky Navigation */
-	if (!!$.prototype.stickyNavbar) {
+	/* if (!!$.prototype.stickyNavbar) {
 		$('#header').stickyNavbar();
-	}
+	} */
 
 	$('#content').waypoint(function (direction) {
 		if (direction === 'down') {

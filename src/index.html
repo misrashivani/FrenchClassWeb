@@ -32,6 +32,10 @@
 
     <!--Google Webfonts-->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     
 
 </head>
@@ -64,84 +68,10 @@
 <script src="./assets/js/jquery.enllax.min.js"></script>
 <script src="./assets/js/jquery.scrollUp.min.js"></script>
 <script src="./assets/js/jquery.easing.min.js"></script>
-<script src="./assets/js/jquery.stickyNavbar.min.js"></script>
 <script src="./assets/js/jquery.waypoints.min.js"></script>
 <script src="./assets/js/images-loaded.min.js"></script>
 <script src="./assets/js/lightbox.min.js"></script>
 <script src="./assets/js/site.js"></script>
-<script src="./assets/js/faq.js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const track = document.querySelector(".testimonial-track");
-    const nextBtn = document.querySelector(".next");
-    const prevBtn = document.querySelector(".prev");
-
-    if (!track || !nextBtn || !prevBtn) return;
-
-    const cards = document.querySelectorAll(".testimonial-card");
-    let currentIndex = 0;
-
-    function getCardsPerView() {
-        if (window.innerWidth <= 600) return 1;
-        if (window.innerWidth <= 992) return 2;
-        return 2;
-    }
-
-    function getCardStep() {
-        const firstCard = cards[0];
-        if (!firstCard) return 0;
-
-        const cardStyle = window.getComputedStyle(firstCard);
-        const cardWidth = firstCard.offsetWidth;
-        const gap = parseInt(window.getComputedStyle(track).gap) || 25;
-
-        return cardWidth + gap;
-    }
-
-    function updateSlider() {
-        const step = getCardStep();
-        track.style.transform = `translateX(-${currentIndex * step}px)`;
-
-        const cardsPerView = getCardsPerView();
-        const maxIndex = Math.max(0, cards.length - cardsPerView);
-
-        prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
-        nextBtn.style.opacity = currentIndex >= maxIndex ? "0.5" : "1";
-        prevBtn.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
-        nextBtn.style.pointerEvents = currentIndex >= maxIndex ? "none" : "auto";
-    }
-
-    nextBtn.addEventListener("click", function () {
-        const cardsPerView = getCardsPerView();
-        const maxIndex = Math.max(0, cards.length - cardsPerView);
-
-        if (currentIndex < maxIndex) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-
-    prevBtn.addEventListener("click", function () {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
-
-    window.addEventListener("resize", function () {
-        const cardsPerView = getCardsPerView();
-        const maxIndex = Math.max(0, cards.length - cardsPerView);
-
-        if (currentIndex > maxIndex) {
-            currentIndex = maxIndex;
-        }
-
-        updateSlider();
-    });
-
-    updateSlider();
-});
-</script>
 </body>
 </html>
