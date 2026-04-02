@@ -30,6 +30,7 @@ $(document).ready(function () {
 			$("#nav-trigger span").removeClass("open");
 		}
 	});
+	
 
 	/* Sticky Navigation */
 	/* if (!!$.prototype.stickyNavbar) {
